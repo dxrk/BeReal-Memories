@@ -9,8 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas": "^2.11.0",
     "dotenv": "^16.0.3",
+    "download": "^8.0.0",
+    "imgur": "^2.2.0",
+    "merge-images": "https://github.com/mkhizeryounas/merge-images/tarball/master",
+    "merge-images-v2": "^2.0.1",
+    "node-downloader-helper": "^2.1.6",
     "request-promise": "^4.2.6",
-    "signale": "^1.4.0"
+    "signale": "^1.4.0",
+    "tslib": "^2.5.0",
+    "webp-converter": "^2.3.3"
   }
 }
