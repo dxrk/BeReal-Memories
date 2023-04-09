@@ -1,0 +1,14 @@
+{
+  "BEREAL": {
+    "USER_TOKEN": "",
+    "REFRESH_TOKEN": ""
+  },
+  "IMGUR": {
+    "CLIENT_ID": "",
+    "CLIENT_SECRET": "",
+    "REFRESH_TOKEN": ""
+  },
+  "IFTTT": {
+    "URL": ""
+  }
+}
