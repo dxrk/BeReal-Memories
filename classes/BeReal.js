@@ -12,18 +12,18 @@ module.exports = {
       method: "POST",
       uri: "https://us-central1-befake-623af.cloudfunctions.net/login",
       body: `{"phoneNumber":"${phoneNumber}"}`,
-      // headers: {
-      //   accept: "*/*",
-      //   "accept-language": "en-US,en;q=0.9",
-      //   "content-type": "text/plain;charset=UTF-8",
-      //   "sec-ch-ua":
-      //     '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
-      //   "sec-ch-ua-mobile": "?0",
-      //   "sec-ch-ua-platform": '"macOS"',
-      //   "sec-fetch-dest": "empty",
-      //   "sec-fetch-mode": "cors",
-      //   "sec-fetch-site": "cross-site",
-      // },
+      headers: {
+        accept: "*/*",
+        "accept-language": "en-US,en;q=0.9",
+        "content-type": "text/plain;charset=UTF-8",
+        "sec-ch-ua":
+          '"Google Chrome";v="111", "Not(A:Brand";v="8", "Chromium";v="111"',
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": '"macOS"',
+        "sec-fetch-dest": "empty",
+        "sec-fetch-mode": "cors",
+        "sec-fetch-site": "cross-site",
+      },
     };
 
     const response = await request(options);
@@ -32,7 +32,7 @@ module.exports = {
       signale.error("Too many requests, please try again later.");
       process.exit(1);
     }
-    // call the verify function in this file
+
     const sessionInfo = JSON.parse(response).sessionInfo;
     return sessionInfo;
   },

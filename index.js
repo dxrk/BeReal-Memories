@@ -13,11 +13,9 @@ const Notification = require("./classes/Notification.js");
 const Merge = require("./classes/Merge.js");
 const input = require("input");
 
-// get current date for EST timezone
 const date = new Date();
 date.setHours(date.getHours() - 4);
 
-// get date in format YYYY-MM-DD, including leading zeros
 const today = date.toISOString().slice(0, 10);
 
 async function updateConfig(token, refreshToken) {

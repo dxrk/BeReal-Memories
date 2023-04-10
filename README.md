@@ -17,9 +17,9 @@ When you start the script, it will prompt for your BeReal login to then be store
 
 ### IFTTT Setup
 
-The script will also prompt for your IFTTT Maker key. This is used to send the notifications to your phone. You can find your key [here](https://ifttt.com/maker).
-
 Here's a guide on how to set up IFTTT to send notifications to your phone: [https://sungkhum.medium.com/how-to-easily-push-notifications-to-your-phone-from-a-micropython-device-21d39968e05c](https://sungkhum.medium.com/how-to-easily-push-notifications-to-your-phone-from-a-micropython-device-21d39968e05c)
+
+The URL you enter should look like: `https://maker.ifttt.com/trigger/trigger_name/with/key/YOUR_KEY`
 
 Here's the settings for the IFTTT applet:
 
