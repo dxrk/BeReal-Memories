@@ -5,6 +5,7 @@ Get notifications with your one year ago memories from BeReal. Inspired by Snapc
 ## Installation
 
 ```bash
+git clone https://github.com/dxrk/BeReal-Memories.git
 npm install
 npm start
 ```
@@ -37,9 +38,10 @@ Lastly, the script will prompt for your Imgur client ID and secret, and refresh 
 
 To run the script on Heroku, follow these steps:
 
-1. Create a new app on Heroku.
-2. Upload the files to the app.
-3. Turn on the `worker` dyno.
+1. Clone and run the script locally to generate the `config.json` file and images folder.
+2. Create a new app on Heroku.
+3. Upload the files to the app.
+4. Turn on the `worker` dyno.
 
 ## Usage
 
