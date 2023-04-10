@@ -30,7 +30,7 @@ Here's the settings for the IFTTT applet:
 Lastly, the script will prompt for your Imgur client ID and secret, and refresh token. This is used to upload the images to Imgur.
 
 1. You can find your client ID and secret [here](https://api.imgur.com/oauth2/addclient).
-2. You can find your refresh token using this URL template [https://api.imgur.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=token](https://api.imgur.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=token).
+2. You can find your refresh token using this URL template: https://api.imgur.com/oauth2/authorize?client_id=YOUR_CLIENT_ID&response_type=token
 3. Your refresh token will be in the URL parameters after you authorize the app.
 
 ### Heroku Setup
