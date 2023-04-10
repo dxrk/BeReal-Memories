@@ -1,5 +1,7 @@
 # BeReal Memories
 
+Still in development. Please open an issue if you have any questions. Currently, not working on Heroku.
+
 Get notifications with your one year ago memories from BeReal. Inspired by Snapchat Memories.
 
 ## Installation
