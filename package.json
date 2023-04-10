@@ -1,9 +1,10 @@
 {
   "name": "one-year-ago-bereal",
   "version": "1.0.0",
-  "description": "",
-  "main": "main.js",
+  "description": "One Year Ago BeReal",
+  "main": "setup.js",
   "scripts": {
+    "start": "node setup.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

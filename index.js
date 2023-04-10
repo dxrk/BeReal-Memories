@@ -103,4 +103,5 @@ rule.tz = "America/New_York";
 rule.hour = 8;
 rule.minute = 0;
 
+signale.start("Running script every day at 8am EST");
 schedule.scheduleJob(rule, main);
