@@ -4,7 +4,6 @@
 /dist
 /tmp
 /out-tsc
-/images
 
 # Runtime data
 pids
@@ -92,5 +91,4 @@ lerna-debug.log
 Thumbs.db
 
 # Config file
-config.json
 test-data.json
