@@ -5,8 +5,8 @@ Get notifications with your one year ago memories from BeReal. Inspired by Snapc
 ## Installation
 
 ```bash
-$ npm install
-$ npm start
+npm install
+npm start
 ```
 
 My goal was to make this application was to make sure I wasn't storing any user data. If you have any difficulties with the installation, please open an issue. Otherwise, if you find a way to improve the installation process, please open a pull request.
