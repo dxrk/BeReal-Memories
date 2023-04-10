@@ -71,7 +71,7 @@ const main = async () => {
   }
 
   const url = await input.text(
-    "Enter your IFTTT webhook URL (Tutorial: https://sungkhum.medium.com/how-to-easily-push-notifications-to-your-phone-from-a-micropython-device-21d39968e05c): "
+    "Enter your IFTTT webhook URL (Tutorial, check README for settings: https://sungkhum.medium.com/how-to-easily-push-notifications-to-your-phone-from-a-micropython-device-21d39968e05c): "
   );
   await updateConfig("IFTTT", "URL", url);
   signale.success("IFTTT webhook URL set to:", url);
