@@ -32,6 +32,30 @@ async function checkFiles() {
   if (!fs.existsSync(path.join(__dirname, "images"))) {
     fs.mkdirSync(path.join(__dirname, "images"));
   }
+
+  if (
+    fs.existsSync(path.join(__dirname, "config.json")) &&
+    fs.existsSync(path.join(__dirname, "images"))
+  ) {
+    await endSetup();
+  }
+}
+
+async function endSetup() {
+  const runNow = await input.confirm("Would you like to run the script now?");
+
+  if (runNow) {
+    const package = require("./package.json");
+    package.scripts.start = "node index.js";
+    package.main = "index.js";
+    fs.writeFileSync(
+      path.join(__dirname, "package.json"),
+      JSON.stringify(package)
+    );
+    require("./index");
+  } else {
+    signale.success("Setup complete, run index.js to start the script");
+  }
 }
 
 async function updateConfig(type, node, data) {
@@ -88,20 +112,7 @@ const main = async () => {
   await updateConfig("IMGUR", "REFRESH_TOKEN", refreshToken);
   signale.success("Imgur refresh token set to:", refreshToken);
 
-  const runNow = await input.confirm("Would you like to run the script now?");
-
-  if (runNow) {
-    const package = require("./package.json");
-    package.scripts.start = "node index.js";
-    package.main = "index.js";
-    fs.writeFileSync(
-      path.join(__dirname, "package.json"),
-      JSON.stringify(package)
-    );
-    require("./index");
-  } else {
-    signale.success("Setup complete, run index.js to start the script");
-  }
+  await endSetup();
 };
 
 main();
