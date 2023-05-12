@@ -1,4 +1,4 @@
-# BeReal Memories
+# Memories for BeReal
 
 Still in development. Please open an issue if you have any questions. Currently, not working on Heroku.
 
